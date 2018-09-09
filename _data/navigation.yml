@@ -1,0 +1,8 @@
+- name: Home
+  link: /
+- name: Über mich
+  link: /about.html
+- name: Dienstleistungen
+  link: /services.html
+- name: Kontakt
+  link: /imprint.html

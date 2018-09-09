@@ -1,0 +1,17 @@
+url: "https://margaretepost.github.io"
+
+languages: ["de",]
+defaultLang: de
+languageNames:
+  de: Deutsch
+plugins:
+  - jekyll-sitemap
+  - jekyll-so-tag
+
+defaults:
+  -
+    scope:
+      path: ""
+    values:
+      lang: de_DE
+      layout: default

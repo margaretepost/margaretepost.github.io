@@ -1,0 +1,23 @@
+<header>
+    <!-- Fixed navbar -->
+    <nav class="navbar navbar-expand-md navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="/"><img src="/assets/img/brand.png" alt="Logo Mp - Margarete Post" class="img-fluid"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+                aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav mr-auto">
+                    {% for item in site.data.navigation %}
+                    <li class="nav-item {% if page.url==item.link %}active{% endif %}">
+                        <a class="nav-link text-primary" href="{{ item.link }}">{{ item.name }} <span class="sr-only">{%
+                                if
+                                page.url==item.link %}(current){% endif %}</span></a>
+                    </li>
+                    {% endfor %}
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
