@@ -1,16 +1,15 @@
 url: "https://mp-margaretepost.de"
 
-languages: ["de",]
+languages: ["de"]
 defaultLang: de
 languageNames:
   de: Deutsch
 plugins:
   - jekyll-sitemap
-  - jekyll-so-tag
+  - jekyll-seo-tag
 
 defaults:
-  -
-    scope:
+  - scope:
       path: ""
     values:
       lang: de_DE
